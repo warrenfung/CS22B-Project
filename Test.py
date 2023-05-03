@@ -1,6 +1,5 @@
 import csv
 import datetime
-import time
 
 from win10toast import ToastNotifier
 
@@ -20,3 +19,4 @@ def check_homework_assignments():
             toaster.show_toast('Upcoming homework assignment', f'{assignment_names} due today', duration=10)
 
 check_homework_assignments()
+    

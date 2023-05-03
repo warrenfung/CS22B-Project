@@ -14,7 +14,7 @@ def check_homework_assignments():
             if (due_date - now).days == 0:
                 assignments_due.append(row[0])
         if assignments_due:
-            assignment_names = ', '.join(assignments_due)
+            assignment_names = '\n'.join(assignments_due)
             toaster = ToastNotifier()
             toaster.show_toast('Upcoming homework assignment', f'{assignment_names} due today', duration=10)
 
